@@ -1,0 +1,22 @@
+.book-page {
+  max-width: 900px;
+  h1 {
+    color: $c-primary;
+  }
+
+  h3 {
+    color: $c-primary;
+  }
+
+  .book-image {
+    @include media-breakpoint-down(md) {
+      max-height: 300px;
+    }
+  }
+  .comments-section {
+    h2 {
+      color: $c-primary;
+      font-size: 24px;
+    }
+  }
+}

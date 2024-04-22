@@ -1,0 +1,11 @@
+.book-list {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  h1 {
+    color: $c-primary;
+    font-weight: 600;
+  }
+}

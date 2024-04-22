@@ -1,0 +1,20 @@
+.btn-primary {
+  background: $c-primary;
+  color: $c-white!important;
+  border-color: $c-primary-dark;
+  &:hover {
+    background: $c-primary-light;
+    color: $c-primary!important;
+    border-color: $c-primary-dark;
+  }
+}
+
+.btn-outline-primary {
+  border-color: $c-primary-dark;
+  color: $c-primary!important;
+  pointer-events: none;
+}
+
+.text-primary {
+  color: $c-primary!important;
+}

@@ -1,0 +1,15 @@
+$c-black                    : #000;
+$c-white                    : #fff;
+$c-base                     : #6e675a;
+$c-primary                  : #dcaf50;
+$c-primary-dark             : #aa7823;
+$c-primary-light            : #fafaf3;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "components/btn";
+@import "components/home";
+@import "components/book-list";
+@import "components/book-card";
+@import "components/book-page";
+@import "components/navigation";

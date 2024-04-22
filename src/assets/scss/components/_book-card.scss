@@ -1,0 +1,26 @@
+.card {
+  .card-body {
+    .card-title {
+      a {
+        color: $c-primary-dark;
+        font-weight: 600;
+      }
+      span {
+        font-size: 16px;
+        color: #666;
+      }
+    }
+  }
+  .card-image {
+    display: inline-block;
+    border-radius: 3px;
+    overflow: hidden;
+    img {
+      max-height: 180px;
+      width: auto!important;
+    }
+  }
+  &.odd {
+    background: $c-primary-light;
+  }
+}

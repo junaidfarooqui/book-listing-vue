@@ -7,6 +7,7 @@ import routes from './routes';
 
 const server = new Hapi.Server({
   port: 3000,
+  host: 'localhost',
   routes: { cors: true },
 });
 

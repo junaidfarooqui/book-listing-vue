@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box; }
+
+img {
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: auto; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background: #fafaf3; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #fff; }
+  @media (max-width: 1023px) {
+    .container {
+      width: 95%; } }
+
+.top-actions {
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .top-actions .top-logo {
+    background: #9a9a9a;
+    color: black;
+    padding: 10px;
+    width: 170px;
+    display: block;
+    float: left;
+    border-radius: 5px;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .top-actions .top-logo {
+        float: none;
+        margin: 0 auto; } }
+  .top-actions .top-menu {
+    display: inline-block;
+    float: right; }
+    @media (max-width: 767px) {
+      .top-actions .top-menu {
+        float: none;
+        margin: 20px auto; } }
+    .top-actions .top-menu ul {
+      padding: 0;
+      margin: 0; }
+      .top-actions .top-menu ul li {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 5px; }
+        @media (max-width: 767px) {
+          .top-actions .top-menu ul li {
+            padding: 10px 7px; } }
+        .top-actions .top-menu ul li.active {
+          background: #dcaf50;
+          color: #fff; }
+
+.main .container {
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.3);
+  padding: 0; }
+
+.main h1 {
+  font-weight: 400;
+  padding: 35px;
+  margin: 0;
+  font-size: 38px; }
+  @media (max-width: 767px) {
+    .main h1 {
+      padding: 30px 15px; } }
+
+.main .featured-book {
+  padding: 30px;
+  background: #fafaf3;
+  position: relative;
+  display: flex; }
+  @media (max-width: 767px) {
+    .main .featured-book {
+      padding: 30px 15px;
+      text-align: center;
+      display: block; } }
+  .main .featured-book .recommended {
+    background: #dcaf50;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 0 0 0 5px; }
+  .main .featured-book img {
+    width: auto;
+    flex: none;
+    height: 360px; }
+    @media (max-width: 767px) {
+      .main .featured-book img {
+        margin-bottom: 25px; } }
+  .main .featured-book .book-info {
+    margin-left: 30px;
+    text-align: left; }
+    .main .featured-book .book-info h2.title {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0 0 10px 0; }
+
+.main .top-voted {
+  padding: 30px; }
+  .main .top-voted h2 {
+    font-size: 32px;
+    font-weight: 700; }
+  .main .top-voted .books-list {
+    width: 100%;
+    display: flex; }
+    @media (max-width: 1023px) {
+      .main .top-voted .books-list {
+        display: block; } }
+    .main .top-voted .books-list .book {
+      background: #fafaf3;
+      width: 33.33%;
+      padding: 20px;
+      border-radius: 10px;
+      margin-right: 30px;
+      text-align: center;
+      position: relative; }
+      @media (max-width: 1023px) {
+        .main .top-voted .books-list .book {
+          width: 100%;
+          margin-bottom: 20px;
+          display: flex; } }
+      @media (max-width: 1023px) {
+        .main .top-voted .books-list .book {
+          margin-bottom: 20px;
+          display: block; } }
+      .main .top-voted .books-list .book .position {
+        position: absolute;
+        font-size: 20px;
+        border: 2px solid #dcaf50;
+        color: #dcaf50;
+        top: 20px;
+        right: 20px;
+        padding: 5px 10px;
+        border-radius: 25px; }
+      .main .top-voted .books-list .book img {
+        max-height: 170px;
+        width: 100px;
+        margin-bottom: 20px;
+        flex: none; }
+      .main .top-voted .books-list .book .book-info {
+        text-align: left; }
+        @media (max-width: 1023px) {
+          .main .top-voted .books-list .book .book-info {
+            margin-left: 20px; } }
+        @media (max-width: 767px) {
+          .main .top-voted .books-list .book .book-info {
+            margin-left: 0; } }
+        .main .top-voted .books-list .book .book-info h3 {
+          font-size: 16px;
+          margin: 0 0 5px 0;
+          max-width: 85%; }
+          @media (max-width: 767px) {
+            .main .top-voted .books-list .book .book-info h3 {
+              max-width: 100%; } }
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  position: sticky;
+  bottom: 0; }
+  footer .container {
+    padding: 10px;
+    background: #333; }
+    footer .container ul {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin: 5px;
+      padding: 0; }
+      footer .container ul li {
+        list-style: none;
+        padding: 0 15px; }
+        @media (max-width: 767px) {
+          footer .container ul li {
+            padding: 0 5px; } }
+        footer .container ul li a {
+          color: #fff;
+          text-decoration: none;
+          margin: 0 10px; }
